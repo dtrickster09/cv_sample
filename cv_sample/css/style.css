@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,200;0,300;1,100;1,200&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body
+{
+    background: rgb(42, 181, 228);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container
+{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+ 
+}
+
+/*Left side container*/
+.container .left_side
+{
+    position:relative;
+    background: #383d3f;
+    padding: 30px;
+    border-radius: 40px 0 0 40px;
+}
+
+.profiletext
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+/*Profile image Holder*/
+.profiletext .profilebox
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+/*Profile image*/
+.profiletext .profilebox img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    text-align: center;
+    line-height: 200px;
+    color: #fff;
+}
+/*Name*/
+.profiletext h2
+{
+    color: #fff;
+    font-size: 30px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: .8cm;
+}
+/*Ocuupation*/
+.profiletext h2 span
+{
+    font-size: 25px;
+    font-weight: 300;
+}
+/*Contact Info*/
+.contactinfo
+{
+    color: #fff;
+    font-size: .39cm;
+    padding: 1px;
+}
+.title
+{
+    text-align: center;
+    padding-top: 20px;
+    text-transform: uppercase;
+}
+.contactinfo ul
+{
+    position: relative;
+}
+.contactinfo ul li
+{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+    font-size: 13px;
+}
+.contactinfo ul li .icon
+{
+    display: inline-block;
+    width: 10px;
+    font-size: 13px;
+    color: rgb(78, 249, 255);
+}
+.contactinfo ul li span
+{
+    color: #fff;
+}
+/*link*/
+.contactinfo a
+{
+    color: #fff;
+}
+.contactinfo a:hover
+{
+    color: red;
+}
+
+/*Education*/
+.contactinfo.education li
+{
+    margin-bottom: 15px;
+}
+/*Year*/
+.contactinfo.education h5
+{
+    color: #03a9f4;
+    font-weight: 500;
+    font-size: 15px;
+}
+/*School*/
+.contactinfo.education h4:nth-child(2)
+{
+    color: #fff;
+    font-weight: 500;
+}
+.contactinfo.education h4
+{
+    color: #fff;
+    font-weight: 300;
+}
+/*Language Shadow Bar*/
+.contactinfo.language .percent
+{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    margin-top: 5px;
+    background: rgb(85, 83, 83);
+    display: block;
+}
+/*highlighter*/
+.contactinfo.language #highlight:hover
+{
+    background: rgb(255, 0, 0);
+}
+/*percentage*/
+.contactinfo.language .percent .lang1
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 66%;
+    background: rgb(78, 249, 255);
+}
+.contactinfo.language .percent .lang2
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(78, 249, 255);
+}
+/*--------------------------------------------*/
+/*Right Side Container*/
+.container .right_side
+{
+    position:relative;
+    background: rgb(255, 255, 255);
+    padding: 40px;
+    border-radius: 0 40px 40px 0;
+}
+/*About*/
+.about
+{
+    margin-bottom: 50px;
+}
+.about:last-child
+{
+    margin-bottom: 0;
+}
+.title_2
+{
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+p
+{
+    text-indent: 50px;
+    color: #333;
+}
+.about .box
+{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+.about .box .monthyear_company
+{
+    min-width: 150px;
+}
+/*month and year*/
+.about .box .monthyear_company h5
+{
+    margin-right:10px;
+    text-transform: uppercase;
+    color: #535558;
+    font-weight: 600;
+}
+.about .box .text h4
+{
+    text-transform: uppercase;
+    color: #003147;
+    font-size: 16px;
+}
+/*Skills*/
+.skills .box
+{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+}
+
+.skills .box h4
+{
+    text-transform: uppercase;
+    color: #535558;
+    font-weight: 800;
+}
+/*Skills back bar*/
+.skills .box .percent
+{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: rgb(233, 225, 225);
+}
+/*percentage*/
+/*******************elaborated NEXT TIME MAKE IT SHORT 33% 66% 100%**********************/
+.skills .box .percent .sk1
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgb(78, 249, 255);
+    width: 66%;
+}
+.skills .box .percent .sk2
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgb(78, 249, 255);
+    width: 33%;
+}
+.skills .box .percent .sk3
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgb(78, 249, 255);
+    width: 33%;
+}
+.skills .box .percent .sk4
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgb(78, 249, 255);
+    width: 33%;
+}
+.skills .box .percent .sk5
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgb(78, 249, 255);
+    width: 66%;
+}
+.skills .box .percent .sk6
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgb(78, 249, 255);
+    width: 66%;
+}
+.skills .box .percent .sk7
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgb(78, 249, 255);
+    width: 66%;
+}
+.skills .box .percent .sk8
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgb(78, 249, 255);
+    width: 33%;
+}
+.skills .box .percent #highlight:hover
+{
+    background: rgb(255, 0, 0);
+}
+/**/
+.interest ul
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.interest ul li
+{
+    list-style: none;
+    color: #333;
+    font-weight: 500;
+    margin: 10px 0;
+}
+.interest ul li .fa
+{
+    color: rgb(78, 249, 255);
+    font-size: 18px;
+    width: 20px;
+}
+/**/
+@media (max-width:1000px)
+{
+    .container
+    {
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .container .left_side{
+        border-radius: 40px 40px 0 0;
+    }
+    .container .right_side{
+        border-radius: 0 0 40px 40px;
+    }
+    .interest ul
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+/*auto adjust*/
+@media (max-width:600px)
+{
+    .about .box
+    {
+        flex-direction: column;
+    }
+    .about .box .monthyear_company
+    {
+        margin-bottom: 5px;
+    }
+    .interest ul
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .skills .box
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
